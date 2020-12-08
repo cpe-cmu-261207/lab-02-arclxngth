@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <title>PersonalWebsite</title>
+    </head>
+    <body style="padding: 16px;">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Leng'sWebsite</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./lab02.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./lab02_2.html">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./lab02_3.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./lab02_4.html">GPAcal</a>
+                  </li>
+        
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <h1 style="padding-left: 20px; text-align: center;">GPA Calculator</h1>
+
+        <div class="row">
+            <div class="col">
+                <label class="form-label">Subject ID</label>
+                <input type="text" class="form-control" id="sub_id">
+            </div>
+            <div class="col">
+                <label class="form-label">Subject Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="col">
+                <label class="form-label">Grade</label>
+              <input type="text" class="form-control" id="grade">
+            </div>
+            <div class="col">
+                <label class="form-label">Credit</label>
+              <input type="text" class="form-control" id="credit">
+            </div>
+            <div class="col">
+                <label class="form-label">Semister</label>
+              <input type="text" class="form-control" id="semister">
+            </div>
+            <div class="col">
+                <label class="form-label">Grade</label>
+                <select class="form-select" id="grade2">
+                    <option selected>Grade</option>
+                    <option value="1">A</option>
+                    <option value="2">B+</option>
+                    <option value="3">B</option>
+                    <option value="4">C+</option>
+                    <option value="5">C</option>
+                    <option value="6">D+</option>
+                    <option value="7">D</option>
+                    <option value="8">F</option>
+                </select>
+            </div>
+        </div> <br>
+        <button type="submit" class="btn btn-primary" id="sub_btn">Submit</button>
+        <button type="submit" class="btn btn-primary" id="eval_btn">Evaluation</button>
+        
+    
+            <table>
+                <tr>
+                    <td>
+                        <a href="./lab02.html"><h2>HOME</h2></a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="./lab02_2.html"><h2>GALLERY</h2></a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="./lab02_3.html"><h2>CONTACT</h2></a>
+                    </td>
+                </tr>
+            
+            </table>
+            <script src = "gpa.js"></script>
+    </body>
+</html>
