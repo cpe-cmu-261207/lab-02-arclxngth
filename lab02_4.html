@@ -33,7 +33,7 @@
             </div>
           </nav>
 
-        <h1 style="padding-left: 20px; text-align: center;">GPA Calculator</h1>
+        <h1 style="text-align: center;">GPA Calculator</h1>
 
         <div class="row">
             <div class="col">
@@ -45,66 +45,38 @@
               <input type="text" class="form-control" id="name">
             </div>
             <div class="col">
-                <label class="form-label">Grade</label>
-              <input type="text" class="form-control" id="grade">
-            </div>
-            <div class="col">
-                <label class="form-label">Credit</label>
-              <input type="text" class="form-control" id="credit">
-            </div>
+              <label class="form-label">Grade</label>
+              <select class="form-select" id="grade">
+                  <option selected>Grade</option>
+                  <option value="1">A</option>
+                  <option value="2">B+</option>
+                  <option value="3">B</option>
+                  <option value="4">C+</option>
+                  <option value="5">C</option>
+                  <option value="6">D+</option>
+                  <option value="7">D</option>
+                  <option value="8">F</option>
+              </select>
+          </div>
+          <div class="col">
+            <label class="form-label">Credit</label>
+            <select class="form-select" id="credit">
+                <option selected>Credit</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
             <div class="col">
                 <label class="form-label">Semister</label>
               <input type="text" class="form-control" id="semister">
-            </div>
-            <div class="col">
-                <label class="form-label">Grade</label>
-                <select class="form-select" id="grade2">
-                    <option selected>Grade</option>
-                    <option value="1">A</option>
-                    <option value="2">B+</option>
-                    <option value="3">B</option>
-                    <option value="4">C+</option>
-                    <option value="5">C</option>
-                    <option value="6">D+</option>
-                    <option value="7">D</option>
-                    <option value="8">F</option>
-                </select>
-            </div>
-        </div> <br>
+            </div> <br><br>
+
+        <div>
+          <ul id="list"></ul>
+        </div>
         <button type="submit" class="btn btn-primary" id="sub_btn">Submit</button>
         <button type="submit" class="btn btn-primary" id="eval_btn">Evaluation</button>
-        
-    
-            <table>
-                <tr>
-                    <td>
-                        <a href="./lab02.html"><h2>HOME</h2></a>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <a href="./lab02_2.html"><h2>GALLERY</h2></a>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <a href="./lab02_3.html"><h2>CONTACT</h2></a>
-                    </td>
-                </tr>
-            
-            </table>
             <script src = "gpa.js"></script>
     </body>
 </html>
