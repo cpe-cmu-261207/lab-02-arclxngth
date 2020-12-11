@@ -52,7 +52,7 @@
     <div class="col">
       <label class="form-label">Grade</label>
       <select class="form-select" id="grade">
-        <option selected>Grade</option>
+        <option selected value="-1">Grade</option>
         <option value="1">A</option>
         <option value="2">B+</option>
         <option value="3">B</option>
@@ -66,7 +66,7 @@
     <div class="col">
       <label class="form-label">Credit</label>
       <select class="form-select" id="credit">
-        <option selected>Credit</option>
+        <option selected value="-1">Credit</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -74,39 +74,55 @@
     </div>
     <div class="col">
       <label class="form-label">Semister</label>
-      <input type="text" class="form-control" id="semister">
-    </div> <br><br>
+      <select class="form-select" id="semister">
+        <option selected value="-1">semister</option>
+        <option disabled>=2563=</option>
+        <option value="1">2/2563</option>
+        <option value="2">1/2563</option>
+        <option disabled>=2562=</option>
+        <option value="3">2/2562</option>
+        <option value="4">1/2562</option>
+        <option disabled>=2561=</option>
+        <option value="5">2/2561</option>
+        <option value="6">1/2561</option>
+        <option disabled>=2560=</option>
+        <option value="7">2/2560</option>
+        <option value="8">1/2560</option>
+      </select>
+    </div>
 
     <div>
       <ul id="list"></ul>
     </div>
-    <table>
-      <tr>
-        <td>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="all" checked value="1">
-            <label class="form-check-label" for="flexRadioDefault1">
-              GPA
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="major" value="2">
-            <label class="form-check-label" for="flexRadioDefault2">
-              Major GPA
-            </label>
-          </div>
-        </td>
-        <td>
-          <input style="width:100px;"class="form-control" list="datalistOptions" id="wanted_semister" placeholder="input wanted semister">
-          <datalist id="datalistOptions">
-            <option value="2563">
-            <option value="2562">
-            <option value="2561">
-            <option value="2560">
-          </datalist>
-        </td>
-      </tr>
-    </table>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="all" checked value="1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        GPA
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="major" value="2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Major GPA
+      </label>
+    </div>
+    <div class="col">
+      <select class="form-select" id="wanted_semister" style="width:200px">
+        <option selected value="-1">wanted semister</option>
+        <option disabled>=2563=</option>
+        <option value="1">2/2563</option>
+        <option value="2">1/2563</option>
+        <option disabled>=2562=</option>
+        <option value="3">2/2562</option>
+        <option value="4">1/2562</option>
+        <option disabled>=2561=</option>
+        <option value="5">2/2561</option>
+        <option value="6">1/2561</option>
+        <option disabled>=2560=</option>
+        <option value="7">2/2560</option>
+        <option value="8">1/2560</option>
+      </select>
+    </div> <br><br>
     <div class="d-grid gap-2 d-md-block">
       <button class="btn btn-primary" type="button" id="sub_btn">submit</button>
       <button class="btn btn-primary" type="button" id="eval_btn" style="background-color:#33cc33;">evaluation</button>
